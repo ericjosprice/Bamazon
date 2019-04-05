@@ -104,6 +104,7 @@ function buying() {
                     );
 
                 } else if (res[0].stock_quantity < parseInt(answer.units)) {
+                    
                     console.log("We currently have " + res[0].stock_quantity + " in stock. My apologies, we do not have enough to complete your order.");
                     setTimeout(onConnect, 4000);
                 }
